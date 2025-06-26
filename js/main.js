@@ -37,19 +37,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     return index < Math.floor(hairdresser.rating) ? '<i class="fas fa-star text-kua-gold"></i>' : star;
                 }).join('');
 
+                const priceRange = hairdresser.services && hairdresser.services.length > 0 
+                                   ? `Fiyat: ${hairdresser.services[0].price.split(' ')[0]} TL'den başlayan` 
+                                   : 'Fiyat bilgisi yok';
+
                 const card = `
-                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <a href="salon.html?id=${hairdresser.id}" class="block bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
                         <img src="${hairdresser.image}" alt="${hairdresser.name}" class="w-full h-48 object-cover object-center">
                         <div class="p-5">
                             <h3 class="text-2xl font-bold text-kua-lacivert mb-2 font-lora">${hairdresser.name}</h3>
                             <p class="text-gray-600 text-sm mb-3 flex items-center"><i class="fas fa-map-marker-alt text-kua-pembe mr-2"></i>${hairdresser.city}</p>
+                            <p class="text-gray-700 text-sm mb-3">${hairdresser.description}</p>
                             <div class="flex items-center mb-4">
                                 ${stars}
                                 <span class="text-gray-500 text-sm ml-2">(${hairdresser.rating})</span>
                             </div>
+                            <p class="text-kua-lacivert font-semibold mb-4">${priceRange}</p>
                             <button class="bg-kua-pembe text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-kua-lacivert transition duration-300 w-full flex items-center justify-center"><i class="far fa-calendar-alt mr-2"></i>Randevu Al</button>
                         </div>
-                    </div>
+                    </a>
                 `;
                 featuredCardsContainer.innerHTML += card;
             });
