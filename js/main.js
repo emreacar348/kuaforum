@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
+
+            // Mobile menu toggle logic after navbar is loaded
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const navLinks = document.getElementById('nav-links');
+            const authButtons = document.getElementById('auth-buttons');
+
+            if (mobileMenuButton && navLinks && authButtons) {
+                mobileMenuButton.addEventListener('click', () => {
+                    navLinks.classList.toggle('hidden');
+                    authButtons.classList.toggle('hidden');
+                });
+            }
         });
 
     // Load Footer
