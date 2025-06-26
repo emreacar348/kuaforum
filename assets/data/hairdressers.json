@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Stil Durağı Kuaför",
+        "city": "İstanbul",
+        "lat": 41.0151, 
+        "lng": 28.9870, 
+        "rating": 4.8,
+        "image": "assets/images/hairdressers/salon1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Saç Sanat Atölyesi",
+        "city": "İstanbul",
+        "lat": 41.0361, 
+        "lng": 29.0068, 
+        "rating": 4.5,
+        "image": "assets/images/hairdressers/salon2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Kadıköy Güzellik Salonu",
+        "city": "İstanbul",
+        "lat": 40.9932, 
+        "lng": 29.0266, 
+        "rating": 4.9,
+        "image": "assets/images/hairdressers/salon3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Beşiktaş Saç Tasarım",
+        "city": "İstanbul",
+        "lat": 41.0436, 
+        "lng": 29.0000, 
+        "rating": 4.2,
+        "image": "assets/images/hairdressers/salon4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Şişli Kuaför Merkezi",
+        "city": "İstanbul",
+        "lat": 41.0550, 
+        "lng": 28.9840, 
+        "rating": 4.7,
+        "image": "assets/images/hairdressers/salon1.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Fatih Saç Stüdyosu",
+        "city": "İstanbul",
+        "lat": 41.0180, 
+        "lng": 28.9500, 
+        "rating": 4.3,
+        "image": "assets/images/hairdressers/salon2.jpg"
+    }
+]

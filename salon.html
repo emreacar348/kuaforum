@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaförüm - Kuaför Adı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kua-lacivert': '#1E3A8A',
+                        'kua-pembe': '#F472B6',
+                        'kua-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'lora': ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-poppins">
+    <div id="navbar-container"></div>
+
+    <main class="container mx-auto mt-28 px-4 py-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex flex-col md:flex-row items-center md:items-start mb-8">
+                <img src="assets/images/hairdressers/salon1.jpg" alt="Kuaför Adı" class="w-48 h-48 object-cover rounded-lg shadow-md mb-6 md:mb-0 md:mr-8 border-4 border-kua-pembe">
+                <div>
+                    <h1 class="text-5xl font-bold text-kua-lacivert mb-2 font-lora">Stil Durağı Kuaför</h1>
+                    <p class="text-gray-600 text-lg mb-2 flex items-center"><i class="fas fa-map-marker-alt text-kua-pembe mr-2"></i>İstanbul</p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-kua-gold text-2xl mr-1">4.8</span>
+                        <i class="fas fa-star text-kua-gold"></i>
+                        <i class="fas fa-star text-kua-gold"></i>
+                        <i class="fas fa-star text-kua-gold"></i>
+                        <i class="fas fa-star text-kua-gold"></i>
+                        <i class="fas fa-star-half-alt text-kua-gold"></i>
+                        <span class="text-gray-500 text-sm ml-2">(120 Yorum)</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">Stil Durağı Kuaför, İstanbul'un kalbinde modern ve şık bir atmosferde hizmet vermektedir. Saç kesimi, renklendirme, bakım ve özel günler için topuz gibi geniş bir hizmet yelpazesi sunuyoruz. Deneyimli ekibimizle hayalinizdeki görünüme kavuşmanız için buradayız.</p>
+                    <button class="mt-6 bg-kua-pembe text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-kua-lacivert transition duration-300 shadow-md flex items-center justify-center"><i class="far fa-calendar-alt mr-3"></i>Randevu Al</button>
+                </div>
+            </div>
+
+            <hr class="my-8 border-gray-200">
+
+            <h2 class="text-3xl font-bold text-kua-lacivert mb-6 font-lora">Hizmetlerimiz</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Saç Kesimi</h3>
+                    <p class="text-gray-600">Modern ve klasik saç kesimleri.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Saç Boyama</h3>
+                    <p class="text-gray-600">Ombre, balyaj, sombre ve tüm renk uygulamaları.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Manikür & Pedikür</h3>
+                    <p class="text-gray-600">El ve ayak bakımı, kalıcı oje.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Özel Gün Topuzları</h3>
+                    <p class="text-gray-600">Düğün, nişan ve özel davetler için topuzlar.</p>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-bold text-kua-lacivert mb-6 font-lora">Müşteri Yorumları</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <span class="font-bold text-gray-800 mr-2">Ayşe Yılmaz</span>
+                        <span class="text-kua-gold"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700">Harika bir deneyimdi! Saç kesimim tam istediğim gibi oldu. Kesinlikle tavsiye ederim.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex items-center mb-2">
+                        <span class="font-bold text-gray-800 mr-2">Mehmet Demir</span>
+                        <span class="text-kua-gold"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700">Personel çok ilgili ve güler yüzlü. Saç boyama işleminden çok memnun kaldım.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container" class="mt-12"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

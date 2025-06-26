@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaförüm - Kuaför Ara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kua-lacivert': '#1E3A8A',
+                        'kua-pembe': '#F472B6',
+                        'kua-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'lora': ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-poppins">
+    <div id="navbar-container"></div>
+
+    <main class="container mx-auto mt-28 px-4 py-8">
+        <h1 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Kuaför Ara</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+                <div id="map" class="h-[600px] rounded-xl shadow-2xl border border-gray-200"></div>
+            </div>
+            <div class="md:col-span-1 bg-white p-6 rounded-xl shadow-lg">
+                <h2 class="text-2xl font-bold text-kua-lacivert mb-4 font-lora">Filtreler</h2>
+                <!-- Filtreleme seçenekleri buraya gelecek -->
+                <div class="mb-4">
+                    <label for="district" class="block text-gray-700 text-sm font-bold mb-2">İlçe:</label>
+                    <select id="district" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <option value="">Tümü</option>
+                        <option value="adalar">Adalar</option>
+                        <option value="arnavutkoy">Arnavutköy</option>
+                        <option value="atasehir">Ataşehir</option>
+                        <option value="avcilar">Avcılar</option>
+                        <option value="bagcilar">Bağcılar</option>
+                        <option value="bahcelievler">Bahçelievler</option>
+                        <option value="bakirkoy">Bakırköy</option>
+                        <option value="basaksehir">Başakşehir</option>
+                        <option value="bayrampasa">Bayrampaşa</option>
+                        <option value="besiktas">Beşiktaş</option>
+                        <option value="beykoz">Beykoz</option>
+                        <option value="beylikduzu">Beylikdüzü</option>
+                        <option value="beyoglu">Beyoğlu</option>
+                        <option value="buyukcekmece">Büyükçekmece</option>
+                        <option value="catalca">Çatalca</option>
+                        <option value="cekmekoy">Çekmeköy</option>
+                        <option value="esenler">Esenler</option>
+                        <option value="esenyurt">Esenyurt</option>
+                        <option value="eyupsultan">Eyüpsultan</option>
+                        <option value="fatih">Fatih</option>
+                        <option value="gaziosmanpasa">Gaziosmanpaşa</option>
+                        <option value="gungoren">Güngören</option>
+                        <option value="kadikoy">Kadıköy</option>
+                        <option value="kagithane">Kağıthane</option>
+                        <option value="kartal">Kartal</option>
+                        <option value="kucukcekmece">Küçükçekmece</option>
+                        <option value="maltepe">Maltepe</option>
+                        <option value="pendik">Pendik</option>
+                        <option value="sancaktepe">Sancaktepe</option>
+                        <option value="sariyer">Sarıyer</option>
+                        <option value="silivri">Silivri</option>
+                        <option value="sultanbeyli">Sultanbeyli</option>
+                        <option value="sultangazi">Sultangazi</option>
+                        <option value="sile">Şile</option>
+                        <option value="sisli">Şişli</option>
+                        <option value="tuzla">Tuzla</option>
+                        <option value="umraniye">Ümraniye</option>
+                        <option value="uskudar">Üsküdar</option>
+                        <option value="zeytinburnu">Zeytinburnu</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="service" class="block text-gray-700 text-sm font-bold mb-2">Hizmet Türü:</label>
+                    <select id="service" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        <option value="">Tümü</option>
+                        <option value="sac-kesimi">Saç Kesimi</option>
+                        <option value="boya">Boya</option>
+                        <option value="manikur">Manikür</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="rating" class="block text-gray-700 text-sm font-bold mb-2">Puan Aralığı:</label>
+                    <input type="range" id="rating" min="1" max="5" value="3" class="w-full">
+                    <span id="rating-value" class="text-gray-600 text-sm">3 ve üzeri</span>
+                </div>
+                <button class="bg-kua-lacivert text-white px-6 py-3 rounded-full hover:bg-kua-pembe transition duration-300 w-full font-poppins text-lg shadow-md">Filtrele</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container" class="mt-12"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+
+:root {
+    --kua-lacivert: #1E3A8A;
+    --kua-pembe: #F472B6;
+    --kua-gold: #D4AF37;
+    --kua-white: #FFFFFF;
+}
+
+.bg-kua-lacivert { background-color: var(--kua-lacivert); }
+.text-kua-lacivert { color: var(--kua-lacivert); }
+.bg-kua-pembe { background-color: var(--kua-pembe); }
+.text-kua-pembe { color: var(--kua-pembe); }
+.bg-kua-gold { background-color: var(--kua-gold); }
+.text-kua-gold { color: var(--kua-gold); }
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+#map {
+    height: 500px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hairdresser-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.hairdresser-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.hairdresser-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.hairdresser-card-content {
+    padding: 1.5rem;
+}
+
+.hairdresser-card-title {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--kua-lacivert);
+}
+
+.hairdresser-card-city {
+    color: #6B7280;
+    margin-bottom: 1rem;
+}
+
+.hairdresser-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--kua-gold);
+    margin-bottom: 1.5rem;
+}
+
+.hairdresser-card-button {
+    display: block;
+    width: 100%;
+    background-color: var(--kua-pembe);
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hairdresser-card-button:hover {
+    background-color: var(--kua-gold);
+}

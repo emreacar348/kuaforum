@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaförüm - Profilim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kua-lacivert': '#1E3A8A',
+                        'kua-pembe': '#F472B6',
+                        'kua-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'lora': ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-poppins">
+    <div id="navbar-container"></div>
+
+    <main class="container mx-auto mt-28 px-4 py-8">
+        <h1 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Profilim</h1>
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row">
+            <div class="md:w-1/3 flex flex-col items-center md:border-r md:pr-8 mb-8 md:mb-0">
+                <img src="assets/images/profil-foto.png" alt="Profil Resmi" class="rounded-full w-32 h-32 object-cover mb-4 border-4 border-kua-lacivert shadow-md">
+                <h2 class="text-2xl font-bold text-kua-lacivert mb-2 font-lora">Ali Yılmaz</h2>
+                <p class="text-gray-600 text-sm">ali.yilmaz@ornek.com</p>
+                <button class="mt-6 bg-kua-lacivert text-white px-6 py-3 rounded-full hover:bg-kua-pembe transition duration-300 font-poppins text-lg shadow-md"><i class="fas fa-edit mr-2"></i>Profili Düzenle</button>
+            </div>
+            <div class="md:w-2/3 md:pl-8">
+                <h3 class="text-3xl font-bold text-kua-lacivert mb-6 font-lora">Geçmiş Randevularım</h3>
+                <div class="space-y-6">
+                    <!-- Örnek Randevu Kartı -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-bold text-gray-800">Stil Durağı Kuaför</h4>
+                            <span class="text-kua-gold font-semibold">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-gray-600 mb-1"><i class="far fa-calendar-alt mr-2"></i>15 Mayıs 2025, 14:00</p>
+                        <p class="text-gray-600 mb-1"><i class="fas fa-cut mr-2"></i>Saç Kesimi & Fön</p>
+                        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>İstanbul</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="text-xl font-bold text-gray-800">Saç Sanat Atölyesi</h4>
+                            <span class="text-kua-gold font-semibold">4.5 <i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="text-gray-600 mb-1"><i class="far fa-calendar-alt mr-2"></i>10 Nisan 2025, 11:00</p>
+                        <p class="text-gray-600 mb-1"><i class="fas fa-paint-brush mr-2"></i>Saç Boyama</p>
+                        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>Ankara</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container" class="mt-12"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
