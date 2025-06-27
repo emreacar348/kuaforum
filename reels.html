@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaförüm - Reels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kua-lacivert': '#1E3A8A',
+                        'kua-pembe': '#F472B6',
+                        'kua-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'lora': ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for vertical video feed */
+        .video-feed::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .video-feed::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .video-feed::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .video-feed::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-white font-poppins">
+    <div id="navbar-container"></div>
+
+    <main class="container mx-auto mt-28 px-4 py-8">
+        <h1 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Tüm Videolar</h1>
+        <div class="flex justify-center">
+            <div class="video-feed w-full max-w-md h-[80vh] overflow-y-scroll snap-y snap-mandatory rounded-xl shadow-lg bg-gray-100">
+                <div class="snap-center flex justify-center items-center h-full">
+                    <video controls autoplay loop muted class="w-full h-full object-cover">
+                        <source src="assets/videos/women-1.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </div>
+                <div class="snap-center flex justify-center items-center h-full">
+                    <video controls autoplay loop muted class="w-full h-full object-cover">
+                        <source src="assets/videos/man-1.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </div>
+                <div class="snap-center flex justify-center items-center h-full">
+                    <video controls autoplay loop muted class="w-full h-full object-cover">
+                        <source src="assets/videos/man-2.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </div>
+                <div class="snap-center flex justify-center items-center h-full">
+                    <video controls autoplay loop muted class="w-full h-full object-cover">
+                        <source src="assets/videos/man-3.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container" class="mt-12"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
