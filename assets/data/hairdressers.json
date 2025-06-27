@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "name": "Stil Durağı Kuaför",
+        "city": "İstanbul",
+        "lat": 41.0151, 
+        "lng": 28.9870, 
+        "rating": 4.8,
+        "image": "assets/images/hairdressers/salon1.jpg",
+        "description": "Modern kesimler ve profesyonel renklendirme hizmetleriyle saçlarınıza yeni bir soluk getirin.",
+        "comments": [
+            {"user": "Ayşe Yılmaz", "rating": 5, "text": "Harika bir deneyimdi, saç kesimim tam istediğim gibi oldu! Kesinlikle tavsiye ederim."},
+            {"user": "Fatma Demir", "rating": 4, "text": "Çok ilgili ve profesyonel bir ekip. Memnun kaldım, sadece biraz bekledim."},
+            {"user": "Canan Kaya", "rating": 5, "text": "Ortam çok rahatlatıcıydı, kahveleri de harika. Saçlarım ışıl ışıl oldu."},
+            {"user": "Deniz Can", "rating": 5, "text": "Uzun zamandır böyle iyi bir kesim yaptırmamıştım. Teşekkürler Stil Durağı!"},
+            {"user": "Elif Su", "rating": 4, "text": "Randevu almak kolaydı, hizmet de kaliteliydi. Tekrar geleceğim."}
+        ],
+        "services": [
+            {"name": "Saç Kesimi (Kadın)", "price": "250 TL"},
+            {"name": "Saç Kesimi (Erkek)", "price": "150 TL"},
+            {"name": "Saç Boyama", "price": "500 TL'den başlayan fiyatlarla"},
+            {"name": "Manikür & Pedikür", "price": "200 TL"},
+            {"name": "Fön", "price": "100 TL"}
+        ],
+        "gallery": [
+            "assets/images/hairdressers/salon1.jpg",
+            "assets/images/hairdressers/salon2.jpg",
+            "assets/images/hairdressers/salon3.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Saç Sanat Atölyesi",
+        "city": "İstanbul",
+        "lat": 41.0361, 
+        "lng": 29.0068, 
+        "rating": 4.5,
+        "image": "assets/images/hairdressers/salon2.jpg",
+        "description": "Saçlarınızı bir sanat eserine dönüştüren özel tasarımlar ve bakımlar.",
+        "comments": [
+            {"user": "Zeynep Arslan", "rating": 4, "text": "Saç boyam çok doğal durdu, tam istediğim tonu yakaladılar."},
+            {"user": "Burcu Şahin", "rating": 5, "text": "Personel çok güler yüzlü ve işini iyi biliyor. Kendimi özel hissettim."},
+            {"user": "Cemil Ak", "rating": 3, "text": "Fiyatlar biraz yüksek geldi, ama sonuç iyiydi."},
+            {"user": "Derya Deniz", "rating": 5, "text": "Saç bakımı için gittim, saçlarım hiç bu kadar canlı olmamıştı."}
+        ],
+        "services": [
+            {"name": "Saç Kesimi", "price": "200 TL"},
+            {"name": "Ombre/Balyaj", "price": "700 TL'den başlayan fiyatlarla"},
+            {"name": "Keratin Bakımı", "price": "600 TL"},
+            {"name": "Topuz", "price": "300 TL"}
+        ],
+        "gallery": [
+            "assets/images/hairdressers/salon2.jpg",
+            "assets/images/hairdressers/salon3.jpg",
+            "assets/images/hairdressers/salon4.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Kadıköy Güzellik Salonu",
+        "city": "İstanbul",
+        "lat": 40.9932, 
+        "lng": 29.0266, 
+        "rating": 4.9,
+        "image": "assets/images/hairdressers/salon3.jpg",
+        "description": "Kadıköy'ün kalbinde, güzelliğinize güzellik katacak kapsamlı hizmetler.",
+        "comments": [
+            {"user": "Deniz Aktaş", "rating": 5, "text": "Manikür ve pedikür harikaydı, çok rahatladım. Hijyen de üst düzeyde."},
+            {"user": "Ebru Çelik", "rating": 5, "text": "Cilt bakımı için geldim, sonuçtan çok memnunum. Cildim parladı."},
+            {"user": "Gamze Yıldız", "rating": 4, "text": "Fiyatlar biraz yüksek ama hizmet kalitesi çok iyi. Değer."},
+            {"user": "Hakan Yılmaz", "rating": 5, "text": "Kaş laminasyonu yaptırdım, çok doğal ve güzel oldu."}
+        ],
+        "services": [
+            {"name": "Cilt Bakımı", "price": "400 TL"},
+            {"name": "Manikür", "price": "120 TL"},
+            {"name": "Pedikür", "price": "150 TL"},
+            {"name": "Kalıcı Oje", "price": "200 TL"},
+            {"name": "Ağda", "price": "100 TL'den başlayan fiyatlarla"}
+        ],
+        "gallery": [
+            "assets/images/hairdressers/salon3.jpg",
+            "assets/images/hairdressers/salon4.jpg",
+            "assets/images/hairdressers/salon1.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Beşiktaş Saç Tasarım",
+        "city": "İstanbul",
+        "lat": 41.0436, 
+        "lng": 29.0000, 
+        "rating": 4.2,
+        "image": "assets/images/hairdressers/salon4.jpg",
+        "description": "Erkekler için modern saç kesimleri ve sakal bakımı konusunda uzman adres.",
+        "comments": [
+            {"user": "Hakan Can", "rating": 4, "text": "Erkek saç kesimi için ideal bir yer. Hızlı ve temiz çalışıyorlar."},
+            {"user": "İlker Demir", "rating": 3, "text": "Bekleme süresi biraz uzundu, ama kesim fena değildi."},
+            {"user": "Jale Pekcan", "rating": 4, "text": "Sakal tıraşı da yaptırdım, çok memnun kaldım."}
+        ],
+        "services": [
+            {"name": "Erkek Saç Kesimi", "price": "180 TL"},
+            {"name": "Sakal Tıraşı", "price": "80 TL"},
+            {"name": "Saç Yıkama & Fön", "price": "100 TL"},
+            {"name": "Cilt Bakımı (Erkek)", "price": "300 TL"}
+        ],
+        "gallery": [
+            "assets/images/hairdressers/salon4.jpg",
+            "assets/images/hairdressers/salon1.jpg",
+            "assets/images/hairdressers/salon2.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Şişli Kuaför Merkezi",
+        "city": "İstanbul",
+        "lat": 41.0550, 
+        "lng": 28.9840, 
+        "rating": 4.7,
+        "image": "assets/images/hairdressers/salon1.jpg",
+        "description": "Şişli'de saç bakımı, renklendirme ve özel günler için profesyonel çözümler.",
+        "comments": [
+            {"user": "Jale Öztürk", "rating": 5, "text": "Saçlarımın rengi mükemmel oldu, çok teşekkürler. Tam istediğim gibi."},
+            {"user": "Kemal Kılıç", "rating": 4, "text": "Randevu sistemi çok kolay, hiç zorlanmadım. Çalışanlar da ilgili."},
+            {"user": "Lale Gül", "rating": 5, "text": "Ombre yaptırdım, çok doğal durdu. Herkese tavsiye ederim."}
+        ],
+        "services": [
+            {"name": "Saç Kesimi", "price": "220 TL"},
+            {"name": "Röfle", "price": "800 TL'den başlayan fiyatlarla"},
+            {"name": "Perma", "price": "500 TL"},
+            {"name": "Gelin Saçı", "price": "1500 TL'den başlayan fiyatlarla"}
+        ],
+        "gallery": [
+            "assets/images/hairdressers/salon1.jpg",
+            "assets/images/hairdressers/salon2.jpg",
+            "assets/images/hairdressers/salon3.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Fatih Saç Stüdyosu",
+        "city": "İstanbul",
+        "lat": 41.0180, 
+        "lng": 28.9500, 
+        "rating": 4.3,
+        "image": "assets/images/hairdressers/salon2.jpg",
+        "description": "Fatih'te saç kesimi, bakımı ve sakal tıraşı hizmetleriyle tarzınızı yansıtın.",
+        "comments": [
+            {"user": "Lale Soylu", "rating": 4, "text": "Topuz modelim çok beğenildi, elinize sağlık. Özel günler için ideal."},
+            {"user": "Mert Yılmaz", "rating": 3, "text": "Fiyatlar ortalama, hizmet kalitesi de öyle. Daha iyi olabilirdi."},
+            {"user": "Nihal Can", "rating": 4, "text": "Saç kesimi için gittim, hızlı ve pratik bir kesim oldu."}
+        ],
+        "services": [
+            {"name": "Saç Kesimi", "price": "180 TL"},
+            {"name": "Saç Bakımı", "price": "350 TL"},
+            {"name": "Sakal Kesimi", "price": "70 TL"},
+            {"name": "Çocuk Saç Kesimi", "price": "100 TL"}
+        ],
+        "gallery": [
+            "assets/images/hairdressers/salon2.jpg",
+            "assets/images/hairdressers/salon3.jpg",
+            "assets/images/hairdressers/salon4.jpg"
+        ]
+    }
+]

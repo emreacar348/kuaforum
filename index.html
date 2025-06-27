@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaförüm - Stilini Bul, Randevunu Al</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white font-poppins">
+
+    <div id="navbar-container"></div>
+
+    <!-- Fixed Banner -->
+    <div class="fixed top-20 left-0 w-full bg-kua-gold text-white text-center py-2 z-40">
+        <p class="text-sm font-semibold">🎉 İlk Randevunuza Özel %10 İndirim! Hemen Keşfet!</p>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="bg-kua-lacivert text-white text-center py-20 pt-36">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold font-lora mb-4">Stilini Bul, Randevunu Al</h1>
+            <p class="text-xl mb-8">Türkiye'nin en iyi kuaförlerini keşfet, yorumları oku ve kolayca randevu oluştur.</p>
+            <a href="search.html" class="bg-kua-pembe text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-kua-gold transition duration-300">Hemen Keşfet</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-16 px-4">
+        <!-- Reels Video Section -->
+        <section id="reels-video" class="mb-16 py-12 bg-gray-100 rounded-xl shadow-lg text-center">
+            <h2 class="text-4xl font-bold text-kua-lacivert mb-8 font-lora">Kuaförüm ile Tarzını Keşfet!</h2>
+            <div class="flex justify-center items-center flex-col">
+                <a href="reels.html" class="block w-full max-w-xs rounded-lg shadow-xl overflow-hidden">
+                    <video autoplay loop muted class="w-full h-96 object-cover">
+                        <source src="assets/videos/women-1.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                </a>
+                <a href="reels.html" class="mt-6 bg-kua-pembe text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-kua-lacivert transition duration-300 shadow-md">Tüm Videoları Keşfet</a>
+            </div>
+            <p class="text-gray-700 text-lg mt-6">Randevu al, berberinle yeni stiline kavuş, uygun maliyet, yakışıklı şahsiyet!</p>
+        </section>
+
+        <!-- Öne Çıkan Kuaförler -->
+        <section id="featured-hairdressers" class="mb-16">
+            <h2 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Öne Çıkan Kuaförler</h2>
+            <div id="featured-cards" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Kuaför kartları buraya js/main.js ile eklenecek -->
+            </div>
+        </section>
+
+        <!-- Müşteri Yorumları (Testimonials) -->
+        <section id="testimonials" class="mb-16 py-12 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Müşteri Yorumları</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-kua-pembe text-2xl mr-3"></i>
+                        <span class="font-bold text-gray-800">Ayşe Yılmaz</span>
+                    </div>
+                    <p class="text-gray-700 italic">"Harika bir platform! Aradığım kuaförü kolayca buldum ve randevu aldım. Çok memnun kaldım."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-kua-pembe text-2xl mr-3"></i>
+                        <span class="font-bold text-gray-800">Mehmet Demir</span>
+                    </div>
+                    <p class="text-gray-700 italic">"Kuaförüm sayesinde yeni bir salon keşfettim. Yorumlar çok yardımcı oldu, kesinlikle tavsiye ederim."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-quote-left text-kua-pembe text-2xl mr-3"></i>
+                        <span class="font-bold text-gray-800">Zeynep Kaya</span>
+                    </div>
+                    <p class="text-gray-700 italic">"Mobil uyumluluğu harika, telefonumdan rahatça kullanabiliyorum. Randevu almak hiç bu kadar kolay olmamıştı."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Harita -->
+        <section id="map-section">
+            <h2 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Kuaförleri Keşfet</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <div id="footer-container" class="mt-16"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
