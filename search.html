@@ -36,11 +36,13 @@
         <h1 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Kuaför Ara</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="md:col-span-2">
-                <div id="map" class="h-[600px] rounded-xl shadow-2xl border border-gray-200"></div>
+                <div id="map" class="h-[600px] rounded-xl shadow-2xl border border-gray-200 mb-8"></div>
+                <div id="filtered-hairdressers-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Filtrelenmiş kuaför kartları buraya yüklenecek -->
+                </div>
             </div>
             <div class="md:col-span-1 bg-white p-6 rounded-xl shadow-lg">
                 <h2 class="text-2xl font-bold text-kua-lacivert mb-4 font-lora">Filtreler</h2>
-                <!-- Filtreleme seçenekleri buraya gelecek -->
                 <div class="mb-4">
                     <label for="district" class="block text-gray-700 text-sm font-bold mb-2">İlçe:</label>
                     <select id="district" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
@@ -90,9 +92,7 @@
                     <label for="service" class="block text-gray-700 text-sm font-bold mb-2">Hizmet Türü:</label>
                     <select id="service" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                         <option value="">Tümü</option>
-                        <option value="sac-kesimi">Saç Kesimi</option>
-                        <option value="boya">Boya</option>
-                        <option value="manikur">Manikür</option>
+                        <!-- Hizmetler buraya js/search.js ile dinamik olarak yüklenecek -->
                     </select>
                 </div>
                 <div class="mb-4">
@@ -100,7 +100,8 @@
                     <input type="range" id="rating" min="1" max="5" value="3" class="w-full">
                     <span id="rating-value" class="text-gray-600 text-sm">3 ve üzeri</span>
                 </div>
-                <button class="bg-kua-lacivert text-white px-6 py-3 rounded-full hover:bg-kua-pembe transition duration-300 w-full font-poppins text-lg shadow-md">Filtrele</button>
+                <button id="filter-button" class="bg-kua-lacivert text-white px-6 py-3 rounded-full hover:bg-kua-pembe transition duration-300 w-full font-poppins text-lg shadow-md mb-2">Filtrele</button>
+                <button id="clear-filters-button" class="bg-gray-300 text-gray-800 px-6 py-3 rounded-full hover:bg-gray-400 transition duration-300 w-full font-poppins text-lg shadow-md">Filtreleri Temizle</button>
             </div>
         </div>
     </main>
@@ -109,6 +110,6 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/main.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

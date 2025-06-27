@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaförüm - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kua-lacivert': '#1E3A8A',
+                        'kua-pembe': '#F472B6',
+                        'kua-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'lora': ['Lora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-poppins">
+    <div id="navbar-container"></div>
+
+    <main class="container mx-auto mt-28 px-4 py-8">
+        <h1 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Blog</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Yazısı 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <img src="https://via.placeholder.com/400x250" alt="Blog Resmi" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h2 class="text-2xl font-bold text-kua-lacivert mb-2 font-lora">Tıraş Sonrası Cilt Bakımı Neden Önemlidir?</h2>
+                <p class="text-gray-700 mb-4">Tıraş sonrası cildinizi nemlendirmek ve tahrişi önlemek için yapmanız gerekenler...</p>
+                <a href="#" class="text-kua-pembe hover:underline font-semibold">Devamını Oku <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <!-- Blog Yazısı 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <img src="https://via.placeholder.com/400x250" alt="Blog Resmi" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h2 class="text-2xl font-bold text-kua-lacivert mb-2 font-lora">Saç Modelleri ve Yağ Tipleri: Size En Uygun Olanı Bulun</h2>
+                <p class="text-gray-700 mb-4">Saç tipinize göre doğru saç modelini ve bakım rutinini seçmek için ipuçları...</p>
+                <a href="#" class="text-kua-pembe hover:underline font-semibold">Devamını Oku <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <!-- Blog Yazısı 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <img src="https://via.placeholder.com/400x250" alt="Blog Resmi" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h2 class="text-2xl font-bold text-kua-lacivert mb-2 font-lora">Evde Saç Bakımı İçin Doğal Maske Tarifleri</h2>
+                <p class="text-gray-700 mb-4">Saçlarınızı evde doğal malzemelerle nasıl besleyebilirsiniz? İşte pratik tarifler...</p>
+                <a href="#" class="text-kua-pembe hover:underline font-semibold">Devamını Oku <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-container" class="mt-12"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

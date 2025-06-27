@@ -35,54 +35,13 @@
     <main class="container mx-auto mt-28 px-4 py-8">
         <h1 class="text-4xl font-bold text-kua-lacivert mb-8 text-center font-lora">Randevu Al</h1>
         <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-            <form>
-                <div class="mb-6">
-                    <label for="hairdresser-select" class="block text-gray-700 text-lg font-bold mb-2">Kuaför Seçin:</label>
-                    <select id="hairdresser-select" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg">
-                        <option value="">-- Kuaför Seçiniz --</option>
-                        <!-- Kuaförler JS ile yüklenecek -->
-                    </select>
-                </div>
-                <div class="mb-6">
-                    <label for="service-select" class="block text-gray-700 text-lg font-bold mb-2">Hizmet Seçin:</label>
-                    <select id="service-select" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg">
-                        <option value="">-- Hizmet Seçiniz --</option>
-                        <option value="sac-kesimi">Saç Kesimi</option>
-                        <option value="boya">Boya</option>
-                        <option value="manikur">Manikür</option>
-                        <option value="pedikur">Pedikür</option>
-                    </select>
-                </div>
-                <div class="mb-6">
-                    <label for="date-picker" class="block text-gray-700 text-lg font-bold mb-2">Tarih Seçin:</label>
-                    <input type="text" id="date-picker" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" placeholder="Tarih Seç...">
-                </div>
-                <div class="mb-6">
-                    <label for="time-picker" class="block text-gray-700 text-lg font-bold mb-2">Saat Seçin:</label>
-                    <select id="time-picker" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg">
-                        <option value="">-- Saat Seçiniz --</option>
-                        <option value="09:00">09:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="11:00">11:00</option>
-                        <option value="13:00">13:00</option>
-                        <option value="14:00">14:00</option>
-                    </select>
-                </div>
-                <button type="submit" class="bg-kua-pembe text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-kua-lacivert transition duration-300 w-full shadow-md flex items-center justify-center"><i class="far fa-calendar-check mr-3"></i>Randevuyu Onayla</button>
-            </form>
+            <p class="text-gray-700 text-center mb-6">Randevu almak için aşağıdaki formu doldurabilirsiniz. Bu form, Google Forms veya Tally gibi harici bir servis aracılığıyla yönetilmektedir.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_1234567890/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor...</iframe>
         </div>
     </main>
 
     <div id="footer-container" class="mt-12"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/main.js"></script>
-    <script src="js/appointment.js"></script>
-    <script>
-        flatpickr("#date-picker", {
-            dateFormat: "Y-m-d",
-            minDate: "today"
-        });
-    </script>
 </body>
 </html>
