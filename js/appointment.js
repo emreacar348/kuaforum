@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { db } from './firebase.js';
 import { collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js';
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     displayAppointments(); // Initial load of appointments
 });
-=======
+
 // appointment.js
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -132,4 +132,4 @@ Saat: ${selectedTime}`);
         }
     });
 });
->>>>>>> ae290d34293b7faed219a8f8667674a1fb67c144
+
